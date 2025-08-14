@@ -67,10 +67,6 @@ phase2cli auth
 ```bash
 phase2cli contribute -c ethstorage-v1-trusted-setup-ceremony
 ```
-
-* `screen` से बाहर: **Ctrl+A, D**
-* वापस आने के लिए:
-
 ```
 
 ### 9. Cleanup (optional)
