@@ -82,6 +82,9 @@ phase2cli auth
 
 ```bash
 screen -S ceremony
+
+```
+```bash
 phase2cli contribute -c ethstorage-v1-trusted-setup-ceremony
 ```
 
