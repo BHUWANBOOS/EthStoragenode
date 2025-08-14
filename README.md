@@ -30,11 +30,12 @@ sudo npm install -g @p0tion/phase2cli
 phase2cli --version
 
 # 7. GitHub Authentication
-phase2cli auth
+sudo phase2cli auth
 # GitHub login करें और p0tion को Gists read/write access allow करें
 
 # 8. Ceremony में योगदान दें (VPS users के लिए Screen का use)
 sudo screen -S ceremony
+
 sudo phase2cli contribute -c ethstorage-v1-trusted-setup-ceremony
 
 # Screen commands:
