@@ -1,102 +1,65 @@
-hi
+```
+🚀 EthStorage V1 Trusted Setup Ceremony (VPS/Local Guide)
 
----
-
-````markdown
-# 🚀 EthStorage V1 Trusted Setup Ceremony (Local/VPS Guide)
-
-## 📌 Requirements
+📌 Requirements:
 - Ubuntu 22.04 (Local PC या VPS)
 - 2 vCPU, 4 GB RAM, 30+ GB SSD
 - GitHub account (≥ 1 महीना पुराना, ≥ 1 Public repo, ≥ 5 followers, ≥ 1 following, Gists enabled)
 
----
+────────────────────────────
 
-## 🛠 Installation Steps
-
-### 1. सिस्टम अपडेट करें
-```bash
+1️⃣ सिस्टम अपडेट करें
 sudo apt update && sudo apt upgrade -y
-sudo apt install -y curl git build-essential
-````
+sudo apt install -y curl git build-essential screen
 
-### 2. Node.js v18 और npm v9.2 इंस्टॉल करें
-
-```bash
+2️⃣ Node.js v18 और npm v9.2 इंस्टॉल करें
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install -y nodejs
 sudo npm install -g npm@9.2
-```
 
-### 3. वर्शन चेक करें
-
-```bash
+3️⃣ वर्शन चेक करें
 node -v
 npm -v
-```
 
-### 4. Temporary वर्कस्पेस बनाएं
+4️⃣ Temporary वर्कस्पेस बनाएं
+sudo mkdir ~/trusted-setup-tmp && cd ~/trusted-setup-tmp
 
-```bash
-mkdir ~/trusted-setup-tmp && cd ~/trusted-setup-tmp
-```
-
-### 5. Phase2 CLI इंस्टॉल करें
-
-```bash
+5️⃣ Phase2 CLI इंस्टॉल करें
 sudo npm install -g @p0tion/phase2cli
-```
 
-### 6. CLI वर्शन चेक करें
-
-```bash
+6️⃣ CLI वर्शन चेक करें
 phase2cli --version
-```
 
-### 7. GitHub Authentication
-
-```bash
+7️⃣ GitHub Authentication
 phase2cli auth
-```
+( GitHub login करें और p0tion को Gists read/write access allow करें )
 
-* GitHub login करें
-* **p0tion** को Gists read/write access allow करें
+8️⃣ Ceremony में योगदान दें (VPS users के लिए Screen का use)
+# Screen session शुरू करें
+sudo screen -S ceremony
 
-### 8. Ceremony में योगदान दें
+# Ceremony में योगदान करें
+sudo phase2cli contribute -c ethstorage-v1-trusted-setup-ceremony
 
-```bash
-phase2cli contribute -c ethstorage-v1-trusted-setup-ceremony
-```
-```
+📌 Screen tips:
+- Screen से बाहर जाने के लिए → Ctrl+A, D  
+- वापस आने के लिए → sudo screen -r ceremony  
+- अगर कई screen sessions हों → sudo screen -ls  
+- किसी session को resume करें → sudo screen -r <ID>
 
-### 9. Cleanup (optional)
+9️⃣ Cleanup (optional)
+sudo phase2cli clean
+sudo phase2cli logout
+sudo rm -rf ~/trusted-setup-tmp
 
-```bash
-phase2cli clean
-phase2cli logout
-rm -rf ~/trusted-setup-tmp
-```
+────────────────────────────
 
----
+✅ GitHub Checklist
+- अकाउंट ≥ 1 महीना पुराना
+- ≥ 1 Public Repository
+- ≥ 5 Followers
+- ≥ 1 Following
+- GitHub Gists enabled
 
-## ✅ GitHub Checklist
-
-* [x] अकाउंट ≥ 1 महीना पुराना
-* [x] ≥ 1 Public Repository
-* [x] ≥ 5 Followers
-* [x] ≥ 1 Following
-* [x] GitHub Gists enabled
-
----
-
-🎉 **Done!** अब आप Ceremony में सफलतापूर्वक शामिल हो गए हैं।
-
-```
-
----
-
-ये version 100% plain text है — कोई hidden character या fancy quotes नहीं,  
-GitHub में डालोगे तो commands एकदम clean copy होंगी और terminal में error नहीं आएगा।  
-
-तुम चाहो तो मैं अभी इसे तुम्हारे `BHUWANBOOS/EthStoragenode` repo के README में डालने के लिए final version बना सकता हूँ।
+🎉 Done! Ceremony में सफलतापूर्वक शामिल हो गए।
 ```
