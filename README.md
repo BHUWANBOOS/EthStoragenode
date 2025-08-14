@@ -29,41 +29,42 @@
 ## 🛠 Installation & Setup
 
 ### **1️⃣ सिस्टम अपडेट करें**
-```bash
+
+````
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y curl git build-essential
 ````
 
 ### **2️⃣ Node.js v18 और npm v9.2 इंस्टॉल करें**
 
-```bash
+````
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install -y nodejs
 sudo npm install -g npm@9.2
-```
+````
 
 ### **3️⃣ वर्शन चेक करें**
 
-```bash
+````
 node -v
 npm -v
-```
+````
 
 ### **4️⃣ Temporary वर्कस्पेस बनाएं**
 
-```bash
+```
 mkdir ~/trusted-setup-tmp && cd ~/trusted-setup-tmp
 ```
 
 ### **5️⃣ Phase2 CLI इंस्टॉल करें**
 
-```bash
+```
 sudo npm install -g @p0tion/phase2cli
 ```
 
 ### **6️⃣ CLI वर्शन चेक करें**
 
-```bash
+```
 phase2cli --version
 ```
 
