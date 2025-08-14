@@ -65,15 +65,12 @@ phase2cli auth
 ### 8. Ceremony में योगदान दें
 
 ```bash
-screen -S ceremony
 phase2cli contribute -c ethstorage-v1-trusted-setup-ceremony
 ```
 
 * `screen` से बाहर: **Ctrl+A, D**
 * वापस आने के लिए:
 
-```bash
-screen -r ceremony
 ```
 
 ### 9. Cleanup (optional)
