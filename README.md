@@ -53,7 +53,7 @@ mkdir ~/trusted-setup-tmp && cd ~/trusted-setup-tmp
 ## **5️⃣ Phase2 CLI इंस्टॉल करें**
 
 ```bash
-npm install -g @p0tion/phase2cli
+sudo npm install -g @p0tion/phase2cli
 ```
 
 ---
@@ -69,7 +69,7 @@ phase2cli --version
 ## **7️⃣ GitHub Authentication**
 
 ```bash
-phase2cli auth
+sudo phase2cli auth
 ```
 
 > GitHub login करें और **p0tion** को Gists read/write access allow करें
@@ -85,7 +85,7 @@ screen -S ceremony
 
 ```
 ```bash
-phase2cli contribute -c ethstorage-v1-trusted-setup-ceremony
+sudo phase2cli contribute -c ethstorage-v1-trusted-setup-ceremony
 ```
 
 **Screen Commands:**
@@ -109,9 +109,9 @@ screen -r <ID>
 ## **9️⃣ Cleanup (Optional)**
 
 ```bash
-phase2cli clean
-phase2cli logout
-rm -rf ~/trusted-setup-tmp
+sudo phase2cli clean
+sudo phase2cli logout
+sudo rm -rf ~/trusted-setup-tmp
 ```
 
 ---
